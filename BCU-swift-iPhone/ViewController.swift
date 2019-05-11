@@ -9,7 +9,11 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    var animView: AnimViewPage?
+    
+    var enemyList: EnemyListPage?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -19,6 +23,30 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    func switchToViewController(_ toVC: UIViewController?) {
+        if (toVC != nil) {
+            addChildViewController((toVC)!)
+            view.addSubview((toVC?.view)!)
+            toVC?.didMove(toParentViewController: self)
+        }
+    }
+
+    @IBAction func switchViews(_ sender: UIButton){
+        let tag = sender.tag;
+        
+        // Create the new view controller, if required.
+        if (tag == 1001) {
+            if (animView == nil) {
+                animView = (self.storyboard?.instantiateViewController(withIdentifier: "AnimView") as! AnimViewPage)
+            }
+            animView?.view.frame = view.frame
+            switchToViewController(animView)
+        }
+    
+    }
+    
+   
 
 
 }

@@ -15,6 +15,11 @@
 		8EC5DBC222865614008504E6 /* BCU_swift_iPhoneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC5DBC122865614008504E6 /* BCU_swift_iPhoneTests.swift */; };
 		8EC5DBCD22865614008504E6 /* BCU_swift_iPhoneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC5DBCC22865614008504E6 /* BCU_swift_iPhoneUITests.swift */; };
 		8EC5DBE322865702008504E6 /* VFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC5DBE222865702008504E6 /* VFile.swift */; };
+		8EC5DBE522865C43008504E6 /* Pack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC5DBE422865C43008504E6 /* Pack.swift */; };
+		8EC5DBE722865D07008504E6 /* FixIndexList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC5DBE622865D07008504E6 /* FixIndexList.swift */; };
+		8EC5DBE9228681FD008504E6 /* DataEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC5DBE8228681FD008504E6 /* DataEntity.swift */; };
+		8EC5DBF122868E70008504E6 /* AnimViewPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC5DBEF22868E70008504E6 /* AnimViewPage.swift */; };
+		8EC5DBF222868E70008504E6 /* EnemyListPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC5DBF022868E70008504E6 /* EnemyListPage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +54,11 @@
 		8EC5DBCC22865614008504E6 /* BCU_swift_iPhoneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BCU_swift_iPhoneUITests.swift; sourceTree = "<group>"; };
 		8EC5DBCE22865614008504E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8EC5DBE222865702008504E6 /* VFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VFile.swift; path = src/util/VFile.swift; sourceTree = "<group>"; };
+		8EC5DBE422865C43008504E6 /* Pack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Pack.swift; path = src/util/pack/Pack.swift; sourceTree = "<group>"; };
+		8EC5DBE622865D07008504E6 /* FixIndexList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FixIndexList.swift; path = src/util/FixIndexList.swift; sourceTree = "<group>"; };
+		8EC5DBE8228681FD008504E6 /* DataEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataEntity.swift; path = src/util/entity/data/DataEntity.swift; sourceTree = "<group>"; };
+		8EC5DBEF22868E70008504E6 /* AnimViewPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AnimViewPage.swift; path = src/page/AnimViewPage.swift; sourceTree = "<group>"; };
+		8EC5DBF022868E70008504E6 /* EnemyListPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EnemyListPage.swift; path = src/page/EnemyListPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +141,7 @@
 		8EC5DBDC228656C0008504E6 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				8EC5DBEA228689A2008504E6 /* page */,
 				8EC5DBE1228656F8008504E6 /* util */,
 			);
 			name = src;
@@ -140,8 +151,20 @@
 			isa = PBXGroup;
 			children = (
 				8EC5DBE222865702008504E6 /* VFile.swift */,
+				8EC5DBE422865C43008504E6 /* Pack.swift */,
+				8EC5DBE622865D07008504E6 /* FixIndexList.swift */,
+				8EC5DBE8228681FD008504E6 /* DataEntity.swift */,
 			);
 			name = util;
+			sourceTree = "<group>";
+		};
+		8EC5DBEA228689A2008504E6 /* page */ = {
+			isa = PBXGroup;
+			children = (
+				8EC5DBEF22868E70008504E6 /* AnimViewPage.swift */,
+				8EC5DBF022868E70008504E6 /* EnemyListPage.swift */,
+			);
+			name = page;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,6 +229,10 @@
 		8EC5DBA122865613008504E6 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					1001,
+					1002,
+				);
 				LastSwiftUpdateCheck = 0820;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = BattleCatsUltimate;
@@ -278,8 +305,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8EC5DBE722865D07008504E6 /* FixIndexList.swift in Sources */,
+				8EC5DBE522865C43008504E6 /* Pack.swift in Sources */,
+				8EC5DBE9228681FD008504E6 /* DataEntity.swift in Sources */,
 				8EC5DBAF22865613008504E6 /* ViewController.swift in Sources */,
 				8EC5DBAD22865613008504E6 /* AppDelegate.swift in Sources */,
+				8EC5DBF222868E70008504E6 /* EnemyListPage.swift in Sources */,
+				8EC5DBF122868E70008504E6 /* AnimViewPage.swift in Sources */,
 				8EC5DBE322865702008504E6 /* VFile.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
