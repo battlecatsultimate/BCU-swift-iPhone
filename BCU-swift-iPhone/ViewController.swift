@@ -11,7 +11,6 @@ import UIKit
 class ViewController: UIViewController {
     
     var animView: AnimViewPage?
-    
     var enemyList: EnemyListPage?
     
     override func viewDidLoad() {

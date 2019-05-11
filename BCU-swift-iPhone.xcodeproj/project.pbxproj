@@ -3,10 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8E7A2DBC22875440003DFA77 /* Reader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7A2DBB22875440003DFA77 /* Reader.swift */; };
+		8E7A2DBE22875459003DFA77 /* Writer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7A2DBD22875459003DFA77 /* Writer.swift */; };
+		8E7A2DC022875465003DFA77 /* ZipLib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7A2DBF22875465003DFA77 /* ZipLib.swift */; };
+		8E7A2DC22287573F003DFA77 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7A2DC12287573F003DFA77 /* Extensions.swift */; };
 		8EC5DBAD22865613008504E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC5DBAC22865613008504E6 /* AppDelegate.swift */; };
 		8EC5DBAF22865613008504E6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC5DBAE22865613008504E6 /* ViewController.swift */; };
 		8EC5DBB222865613008504E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EC5DBB022865613008504E6 /* Main.storyboard */; };
@@ -40,6 +44,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8E7A2DBB22875440003DFA77 /* Reader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Reader.swift; path = src/io/Reader.swift; sourceTree = SOURCE_ROOT; };
+		8E7A2DBD22875459003DFA77 /* Writer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Writer.swift; path = src/io/Writer.swift; sourceTree = SOURCE_ROOT; };
+		8E7A2DBF22875465003DFA77 /* ZipLib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ZipLib.swift; path = src/io/ZipLib.swift; sourceTree = SOURCE_ROOT; };
+		8E7A2DC12287573F003DFA77 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		8EC5DBA922865613008504E6 /* BCU-swift-iPhone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BCU-swift-iPhone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EC5DBAC22865613008504E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8EC5DBAE22865613008504E6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -86,6 +94,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8E7A2DBA22875413003DFA77 /* io */ = {
+			isa = PBXGroup;
+			children = (
+				8E7A2DBB22875440003DFA77 /* Reader.swift */,
+				8E7A2DBD22875459003DFA77 /* Writer.swift */,
+				8E7A2DBF22875465003DFA77 /* ZipLib.swift */,
+			);
+			path = io;
+			sourceTree = "<group>";
+		};
 		8EC5DBA022865613008504E6 = {
 			isa = PBXGroup;
 			children = (
@@ -141,6 +159,7 @@
 		8EC5DBDC228656C0008504E6 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				8E7A2DBA22875413003DFA77 /* io */,
 				8EC5DBEA228689A2008504E6 /* page */,
 				8EC5DBE1228656F8008504E6 /* util */,
 			);
@@ -154,6 +173,7 @@
 				8EC5DBE422865C43008504E6 /* Pack.swift */,
 				8EC5DBE622865D07008504E6 /* FixIndexList.swift */,
 				8EC5DBE8228681FD008504E6 /* DataEntity.swift */,
+				8E7A2DC12287573F003DFA77 /* Extensions.swift */,
 			);
 			name = util;
 			sourceTree = "<group>";
@@ -254,7 +274,7 @@
 				};
 			};
 			buildConfigurationList = 8EC5DBA422865613008504E6 /* Build configuration list for PBXProject "BCU-swift-iPhone" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -308,10 +328,14 @@
 				8EC5DBE722865D07008504E6 /* FixIndexList.swift in Sources */,
 				8EC5DBE522865C43008504E6 /* Pack.swift in Sources */,
 				8EC5DBE9228681FD008504E6 /* DataEntity.swift in Sources */,
+				8E7A2DBC22875440003DFA77 /* Reader.swift in Sources */,
 				8EC5DBAF22865613008504E6 /* ViewController.swift in Sources */,
 				8EC5DBAD22865613008504E6 /* AppDelegate.swift in Sources */,
+				8E7A2DBE22875459003DFA77 /* Writer.swift in Sources */,
+				8E7A2DC22287573F003DFA77 /* Extensions.swift in Sources */,
 				8EC5DBF222868E70008504E6 /* EnemyListPage.swift in Sources */,
 				8EC5DBF122868E70008504E6 /* AnimViewPage.swift in Sources */,
+				8E7A2DC022875465003DFA77 /* ZipLib.swift in Sources */,
 				8EC5DBE322865702008504E6 /* VFile.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -469,7 +493,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -479,10 +504,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "BCU-swift-iPhone/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "BattleCatsUltimate.BCU-swift-iPhone";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -491,10 +519,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "BCU-swift-iPhone/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "BattleCatsUltimate.BCU-swift-iPhone";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -504,10 +535,14 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = "BCU-swift-iPhoneTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "BattleCatsUltimate.BCU-swift-iPhoneTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BCU-swift-iPhone.app/BCU-swift-iPhone";
 			};
 			name = Debug;
@@ -518,10 +553,14 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = "BCU-swift-iPhoneTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "BattleCatsUltimate.BCU-swift-iPhoneTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BCU-swift-iPhone.app/BCU-swift-iPhone";
 			};
 			name = Release;
@@ -531,10 +570,14 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = "BCU-swift-iPhoneUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "BattleCatsUltimate.BCU-swift-iPhoneUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 				TEST_TARGET_NAME = "BCU-swift-iPhone";
 			};
 			name = Debug;
@@ -544,10 +587,14 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = "BCU-swift-iPhoneUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "BattleCatsUltimate.BCU-swift-iPhoneUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 				TEST_TARGET_NAME = "BCU-swift-iPhone";
 			};
 			name = Release;
