@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16G1918" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -13,37 +14,43 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BCU_swift_iPhone" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Battle Cats Ultimate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dR4-yi-CjV">
-                                <rect key="frame" x="111" y="73" width="153" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Battle Cats Ultimate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dR4-yi-CjV">
+                                <rect key="frame" x="329.66666666666669" y="8" width="153" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" tag="1001" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kmd-Xw-LsQ">
-                                <rect key="frame" x="54" y="224" width="85" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" tag="1001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kmd-Xw-LsQ">
+                                <rect key="frame" x="44" y="49" width="85" height="30"/>
                                 <state key="normal" title="Enemy Anim"/>
                                 <connections>
                                     <action selector="switchViews:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gn8-Bu-l33"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="1002" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5QZ-LW-aQ8">
-                                <rect key="frame" x="55" y="339" width="82" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" tag="1002" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5QZ-LW-aQ8">
+                                <rect key="frame" x="44" y="99" width="85" height="30"/>
                                 <state key="normal" title="Enemy Data"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="dR4-yi-CjV" firstAttribute="centerX" secondItem="Zpf-56-fYs" secondAttribute="centerX" id="8fM-EB-D4s"/>
+                            <constraint firstItem="kmd-Xw-LsQ" firstAttribute="top" secondItem="dR4-yi-CjV" secondAttribute="bottom" constant="20" id="WFb-Mz-1Xg"/>
+                            <constraint firstItem="kmd-Xw-LsQ" firstAttribute="leading" secondItem="Zpf-56-fYs" secondAttribute="leading" id="ZXV-mo-PIe"/>
+                            <constraint firstItem="dR4-yi-CjV" firstAttribute="top" secondItem="Zpf-56-fYs" secondAttribute="top" constant="8" id="ftE-P7-pAJ"/>
+                            <constraint firstItem="Zpf-56-fYs" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="kmd-Xw-LsQ" secondAttribute="trailing" priority="500" id="gg6-I0-Xuq"/>
+                            <constraint firstItem="5QZ-LW-aQ8" firstAttribute="leading" secondItem="kmd-Xw-LsQ" secondAttribute="leading" id="jyx-4u-hWi"/>
+                            <constraint firstItem="5QZ-LW-aQ8" firstAttribute="trailing" secondItem="kmd-Xw-LsQ" secondAttribute="trailing" id="l0p-ZG-EjJ"/>
+                            <constraint firstItem="5QZ-LW-aQ8" firstAttribute="top" secondItem="kmd-Xw-LsQ" secondAttribute="bottom" constant="20" id="p7k-O1-ruj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Zpf-56-fYs"/>
                     </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -53,24 +60,25 @@
         <scene sceneID="Uhi-uY-3Fi">
             <objects>
                 <viewController storyboardIdentifier="AnimView" id="Ub5-Me-ea5" customClass="AnimViewPage" customModule="BCU_swift_iPhone" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="lS6-tt-38a"/>
-                        <viewControllerLayoutGuide type="bottom" id="upL-SB-Eaz"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="ijr-OW-tFh">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vOy-TT-8Dw">
-                                <rect key="frame" x="60" y="137" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vOy-TT-8Dw">
+                                <rect key="frame" x="44" y="0.0" width="34" height="30"/>
+                                <state key="normal" title="Back"/>
                                 <connections>
                                     <action selector="back:" destination="Ub5-Me-ea5" eventType="touchUpInside" id="HZf-V8-a5P"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="QHf-6V-QUd" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="vOy-TT-8Dw" secondAttribute="trailing" priority="500" id="IjO-OQ-OMp"/>
+                            <constraint firstItem="vOy-TT-8Dw" firstAttribute="leading" secondItem="QHf-6V-QUd" secondAttribute="leading" id="eml-UE-1lY"/>
+                            <constraint firstItem="vOy-TT-8Dw" firstAttribute="top" secondItem="QHf-6V-QUd" secondAttribute="top" id="ocu-7K-b58"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="QHf-6V-QUd"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QmZ-It-kUu" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -81,14 +89,11 @@
         <scene sceneID="IkD-xV-TSC">
             <objects>
                 <viewController storyboardIdentifier="EnemyList" id="s6D-ce-MNX" customClass="EnemyListPage" customModule="BCU_swift_iPhone" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="fok-SP-ReX"/>
-                        <viewControllerLayoutGuide type="bottom" id="W4G-aJ-HET"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="QGu-6d-V1P">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="cR6-pl-09F"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="89X-ct-eWq" userLabel="First Responder" sceneMemberID="firstResponder"/>

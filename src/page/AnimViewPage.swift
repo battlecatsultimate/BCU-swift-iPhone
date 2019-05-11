@@ -25,7 +25,7 @@ class AnimViewPage: UIViewController {
     @IBAction func back(_ sender: UIButton){
         willMove(toParent: nil)
         view.removeFromSuperview()
-        removeFromParentr()
+        removeFromParent()
     }
     
     
