@@ -255,7 +255,7 @@
 			};
 			buildConfigurationList = 8EC5DBA422865613008504E6 /* Build configuration list for PBXProject "BCU-swift-iPhone" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
