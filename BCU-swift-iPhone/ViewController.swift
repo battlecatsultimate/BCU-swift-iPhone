@@ -26,9 +26,9 @@ class ViewController: UIViewController {
     
     func switchToViewController(_ toVC: UIViewController?) {
         if (toVC != nil) {
-            addChildViewController((toVC)!)
+            addChild((toVC)!)
             view.addSubview((toVC?.view)!)
-            toVC?.didMove(toParentViewController: self)
+            toVC?.didMove(toParent: self)
         }
     }
 
